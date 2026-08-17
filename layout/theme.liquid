@@ -48,6 +48,9 @@
     {% endif %}
 
     {{ content_for_header }}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+{{ 'custom.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
