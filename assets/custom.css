@@ -267,9 +267,30 @@ body a { color: var(--jc-green); }
   }
 }
 
-/* Map Jenny & Co palette onto Horizon's colour tokens */
+/* ==========================================================================
+   HORIZON TOKEN MAPPING
+   Horizon drives everything from CSS variables. Setting these steers the
+   whole theme — sections, cards, buttons — without fighting selectors.
+   ========================================================================== */
+
 :root,
 body {
+  /* Surfaces & text */
   --color-background: #F7F1E8;
   --color-foreground: #33322F;
+
+  /* Typography */
+  --font-heading--family: 'Fraunces', Georgia, serif;
+  --font-heading--weight: 600;
+  --font-paragraph--family: 'Karla', -apple-system, sans-serif;
+  --font-paragraph--weight: 400;
+}
+
+/* Headings in forest green */
+h1, h2, h3, h4,
+.h0, .h1, .h2, .h3 {
+  color: var(--jc-green);
+  font-variation-settings: 'SOFT' 30, 'WONK' 1, 'opsz' 40;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
 }
