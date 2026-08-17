@@ -266,3 +266,10 @@ body a { color: var(--jc-green); }
     scroll-behavior: auto !important;
   }
 }
+
+/* Map Jenny & Co palette onto Horizon's colour tokens */
+:root,
+body {
+  --color-background: #F7F1E8;
+  --color-foreground: #33322F;
+}
