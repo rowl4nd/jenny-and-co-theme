@@ -1,1 +1,48 @@
+/* ==========================================================================
+   JENNY & CO
+   ========================================================================== */
 
+@font-face {
+  font-family: 'Jenny Hand';
+  src: url('jenny-display.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root, body {
+  --jc-hand: 'Jenny Hand', cursive;
+  --jc-header-bg: #234838;
+  --jc-cream: #F7F1E8;
+  --jc-pink: #D7A3A8;
+  --jc-hot: #E7658D;
+}
+
+/* Jenny's hand on display headings only — never body, never prices
+   (the font has no £ glyph). */
+h1, .h1,
+.jc-lc__title {
+  font-family: var(--jc-hand);
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  line-height: 1.05;
+}
+
+/* Solid header bar rather than transparent-over-hero */
+.header-section,
+.header-section .header {
+  background-color: var(--jc-header-bg);
+  color: #F7F1E8;
+}
+
+.header-section a,
+.header-section .header__menu a,
+.header-section svg {
+  color: #F7F1E8;
+  fill: currentColor;
+}
+
+/* Pill buttons */
+.button, .button-custom, .jc-lc__cta {
+  border-radius: 999px;
+}
