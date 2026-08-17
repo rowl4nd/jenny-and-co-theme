@@ -275,22 +275,27 @@ body a { color: var(--jc-green); }
 
 :root,
 body {
-  /* Surfaces & text */
   --color-background: #F7F1E8;
   --color-foreground: #33322F;
+  --color: #33322F;
 
-  /* Typography */
-  --font-heading--family: 'Fraunces', Georgia, serif;
-  --font-heading--weight: 600;
+  --font-h1--family: 'Fraunces', Georgia, serif;
+  --font-h2--family: 'Fraunces', Georgia, serif;
+  --font-h3--family: 'Fraunces', Georgia, serif;
+  --font-h4--family: 'Fraunces', Georgia, serif;
+  --font-h5--family: 'Fraunces', Georgia, serif;
+  --font-h6--family: 'Fraunces', Georgia, serif;
+
+  --font-h1--weight: 600;
+  --font-h2--weight: 600;
+  --font-h3--weight: 600;
+
   --font-paragraph--family: 'Karla', -apple-system, sans-serif;
-  --font-paragraph--weight: 400;
 }
 
-/* Headings in forest green */
-h1, h2, h3, h4,
-.h0, .h1, .h2, .h3 {
-  color: var(--jc-green);
+/* Headings green. Matches Horizon's own specificity so it wins cleanly. */
+h1, h2, h3, h4, h5, h6,
+.h1.h1, .h2.h2, .h3.h3, .h4.h4 {
+  color: #234838;
   font-variation-settings: 'SOFT' 30, 'WONK' 1, 'opsz' 40;
-  letter-spacing: -0.015em;
-  line-height: 1.05;
 }
