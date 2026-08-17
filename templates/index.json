@@ -34,17 +34,7 @@
             "width": "fit-content"
           }
         },
-        "cta_studio": {
-          "type": "button",
-          "settings": {
-            "label": "Visit the studio",
-            "link": "shopify://pages/visit",
-            "style_class": "button-secondary",
-            "width": "fit-content"
-          }
-        }
-      },
-      "block_order": ["headline", "standfirst", "cta", "cta_studio"],
+      "block_order": ["headline", "standfirst", "cta"],
       "settings": {
         "media_type_1": "image",
         "content_direction": "column",
