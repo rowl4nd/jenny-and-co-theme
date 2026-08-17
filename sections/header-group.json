@@ -24,6 +24,8 @@
             "weight": "",
             "letter_spacing": "normal",
             "case": "none"
+            "background_color_top": "#234838",
+"text_color_top": "#F7F1E8",
           },
           "blocks": {}
         }
